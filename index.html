@@ -1,12 +1,43 @@
-<ol>
-  <li><a href="http://example.com/">example</a></li>
-  <li><a href="https://example.com/">example</a></li>
-  <li><a href="ftp://example.com">без авторизации</a></li>  
-  <li><a href="ftp://user123:password@kubsu.ru/File.txt">с авторизацией</a></li>
-  <li><a href="https://news.ru/category/sport/#Чимаев">Чимаев</a>
 
+<!DOCTYPE html>
 
+<html lang="ru">
 
+  <head>
+    <title>Ссылки</title>
+  </head>
 
-</ol>
+  <body>
 
+    <h1>Ссылки</h1>
+
+    <ol>
+        <li><a href="http://example.com/">example</a></li>
+        <li><a href="https://example.com/">example</a></li>
+        <li><a href="ftp://example.com/Temp/file.txt">без авторизации</a></li>  
+        <li><a href="ftp://user123:password@example.com/File.txt">с авторизацией</a></li>
+        <li><a href="https://news.ru/category/sport/#Чимаев">Чимаев</a>
+        <li><a href="https://3sc4nor.github.io/#example">example</a>
+        <li><a href="http://ssilka?parameter1=p1&parameter2=p2">2 параметра</a>  
+        <li><a href="#head1" title="Мои ссылки">Мои ссылки</a></li>
+        <li><a href="#head2" title="Моя форма">Моя форма</a></li>
+        <li class="link__menu__item"><a>без href</a></li>
+        <li class="link__menu__item"><a href="">пустое href</a></li>
+        <li class="link__menu__item"><a href="http://github.io" rel="nofollow">запрещен переход поисковикам</a></li>
+        <li class="link__menu__item"><a href="http://github.io" rel="nofollow"><!--noindex-->запрещенная для индексации поисковиками<!--/noindex--></a></li>
+        <li class="link__menu__item"><p>Контекстная <a href="http://github.io">ссылка</a> в тексте абзаца</p></li>
+                    <p>: <a href="">Ссылка </a></p>
+                    </li>
+        <li class="link__menu__item">Картинка<br/>
+                    <a href="http://2ch.hk"><img src="https://yandex.ru/images/search?pos=0&img_url=http%3A%2F%2Fs1.1zoom.ru%2Fbig3%2F984%2FCanada_Parks_Lake_Mountains_Forests_Scenery_Rocky_567540_3840x2400.jpg&text=картинка&lr=35&rpt=simage&source=serp" width="3840" height="2400" alt="Описание картинки"></a>
+        <li class="link__menu__item"><a href="page">Относительная ссылка на страницу в текущем каталоге</a></li>
+        <li class="link__menu__item"><a href="./about/page">Относительная ссылка на страницу в каталоге about</a></li>
+        <li class="link__menu__item"><a href="../page">Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
+        <li class="link__menu__item"><a href="../../page">Относительная ссылка на страницу в каталоге двумя уровнями выше текущего</a></li>
+        <li class="link__menu__item"><a href="/">ссылка на главную</a></li>
+        <li class="link__menu__item"><a href="/pages/page">ссылка на внутреннюю</a></li>
+    </ol>
+    
+  </body>
+
+</html> 
