@@ -39,5 +39,85 @@
     </ol>
     
   </body>
+  <head>
+    <title>Форма</title>
+  </head>
+
+  <body>
+
+    <h1>Форма</h1>
+
+    <form action="/"
+      method="POST">
+
+      <label>
+        Имя:<br />
+        <input name="field-name-1"
+          placeholder="Введите ваше имя" />
+      </label><br />
+
+      <label>
+        email:<br />
+        <input name="field-email"
+          type="email"
+          placeholder="Введите вашу почту" />
+      </label><br />
+
+      <label>
+        Дата Рождения:<br />
+        <input name="field-date"
+          value="2003-04-08"
+          type="date" />
+      </label><br />
+
+        Пол:<br />
+      <label><input type="radio" checked="checked"
+        name="radio-group-1" value="Значение1" />
+        Муж</label>
+      <label><input type="radio"
+        name="radio-group-1" value="Значение2" />
+        Жен</label><br />
+      <label>
+
+        Кол-во конечностей:<br />
+      <label><input type="radio" checked="checked"
+        name="radio-group-2" value="Значение1" />
+        1</label>
+      <label><input type="radio"
+        name="radio-group-2" value="Значение2" />
+        2</label>
+      <label><input type="radio"
+        name="radio-group-2" value="Значение3" />
+        100</label><br />
+      <label>
+
+      <label>
+        Суперспособности:
+        <br />
+        <select name="field-name-4[]"
+          multiple="multiple">
+          <option value="Значение1">Бессмертие</option>
+          <option value="Значение2" selected="selected">Полет</option>
+          <option value="Значение3" selected="selected">Крутость</option>
+          <option value="Значение4" selected="selected">СуперКрутость</option>
+          <option value="Значение5" selected="selected">СуперМегаКрутость</option>
+          <option value="Значение3" selected="selected">СуперМегаГигаКрутость</option>
+        </select>
+      </label><br />
+
+        Биография:<br />
+        <textarea name="field-name-2">Пишите тут!</textarea>
+      </label><br />
+
+      Чекбокс:<br />
+      <label><input type="checkbox" checked="checked"
+        name="check-1" />
+        С контрктом ознакомлен(а)</label><br />
+
+      <input type="submit" value="Отправить" />
+    </form>
+
+  </body>
+
 
 </html> 
