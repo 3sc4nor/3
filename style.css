@@ -11,7 +11,7 @@
     background-color: #85d98594;
     border-radius: 30px;
 }
-.nav{
+.navref{
     display:flex;
     justify-content:space-around;
     align-items:center;
@@ -26,7 +26,7 @@
     box-shadow: 0px 5px 27px;
     border-radius: 10px;
 }
-.nav a{
+.navref a{
     color: green;
     display:inline-block;
     padding:10px;
