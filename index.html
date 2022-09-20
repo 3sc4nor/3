@@ -3,121 +3,154 @@
 
 <html lang="ru">
 
-  <head>
-    <title>Ссылки</title>
-  </head>
+<head>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Мой крутой сайт</title>
+</head>
 
-  <body>
-
+<body>
+  <div class="header">
+    <img id="logo" src="logo.png" alt="Наш лого" />
+    <p>Мой сайт</p>
+  </div>
+  <div class="nav">
+    <a href="https://3sc4nor.github.io//#Ссылки">Ссылки</a>
+    <a href="https://3sc4nor.github.io//#Форма">Форма</a>
+    <a href="https://3sc4nor.github.io/#Таблица">Таблица</a>
+  </div>
+  <div class="ssilki">
     <h1>Ссылки</h1>
-
-    <ol>
-        <li><a href="http://example.com/">example</a></li>
-        <li><a href="https://example.com/">example</a></li>
-        <li><a href="ftp://example.com/Temp/file.txt">без авторизации</a></li>  
-        <li><a href="ftp://user123:password@example.com/File.txt">с авторизацией</a></li>
-        <li><a href="https://news.ru/category/sport/#Чимаев">Чимаев</a>
+    <ul>
+      <li><a href="http://example.com/">example</a></li>
+      <li><a href="https://example.com/">example</a></li>
+      <li><a href="ftp://example.com/Temp/file.txt">без авторизации</a></li>  
+      <li><a href="ftp://user123:password@example.com/File.txt">с авторизацией</a></li>
+      <li><a href="https://news.ru/category/sport/#Чимаев">Чимаев</a>
         <li><a href="https://3sc4nor.github.io/#example">example</a>
-        <li><a href="http://ssilka?parameter1=p1&parameter2=p2">2 параметра</a>  
-        <li><a href="#head1" title="Мои ссылки">Мои ссылки</a></li>
-        <li><a href="#head2" title="Моя форма">Моя форма</a></li>
-        <li class="link__menu__item"><a>без href</a></li>
-        <li class="link__menu__item"><a href="">пустое href</a></li>
-        <li class="link__menu__item"><a href="http://github.io" rel="nofollow">запрещен переход поисковикам</a></li>
-        <li class="link__menu__item"><a href="http://github.io" rel="nofollow"><!--noindex-->запрещенная для индексации поисковиками<!--/noindex--></a></li>
-        <li class="link__menu__item"><p>Контекстная <a href="http://github.io">ссылка</a> в тексте абзаца</p></li>
-                    <p>: <a href="">Ссылка </a></p>
-                    </li>
-        <li class="link__menu__item">Картинка<br/>
-                    <a href="https://yandex.ru"><img src="https://yandex.ru/images/search?pos=0&img_url=http%3A%2F%2Fs1.1zoom.ru%2Fbig3%2F984%2FCanada_Parks_Lake_Mountains_Forests_Scenery_Rocky_567540_3840x2400.jpg&text=картинка&lr=35&rpt=simage&source=serp" width="3840" height="2400" alt="Описание картинки"></a>
-        <li class="link__menu__item"><a href="page">Относительная ссылка на страницу в текущем каталоге</a></li>
-        <li class="link__menu__item"><a href="./about/page">Относительная ссылка на страницу в каталоге about</a></li>
-        <li class="link__menu__item"><a href="../page">Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
-        <li class="link__menu__item"><a href="../../page">Относительная ссылка на страницу в каталоге двумя уровнями выше текущего</a></li>
-        <li class="link__menu__item"><a href="/">ссылка на главную</a></li>
-        <li class="link__menu__item"><a href="/pages/page">ссылка на внутреннюю</a></li>
-    </ol>
-    
-  </body>
-  <head>
-    <title>Форма</title>
-  </head>
+          <li><a href="http://ssilka?parameter1=p1&parameter2=p2">2 параметра</a>  
+            <li><a href="#head1" title="Мои ссылки">Мои ссылки</a></li>
+            <li><a href="#head2" title="Моя форма">Моя форма</a></li>
+            <li><a>без href</a></li>
+            <li><a href="">пустое href</a></li>
+            <li><a href="http://github.io" rel="nofollow">запрещен переход поисковикам</a></li>
+            <li><a href="http://github.io" rel="nofollow"><!--noindex-->запрещенная для индексации поисковиками<!--/noindex--></a></li>
+            <li><p>Контекстная <a href="http://github.io">ссылка</a> в тексте абзаца</p>
+              <li><a href="page">Относительная ссылка на страницу в текущем каталоге</a></li>
+              <li><a href="./about/page">Относительная ссылка на страницу в каталоге about</a></li>
+              <li><a href="../page">Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
+              <li><a href="../../page">Относительная ссылка на страницу в каталоге двумя уровнями выше текущего</a></li>
+              <li><a href="/">ссылка на главную</a></li>
+              <li><a href="/pages/page">ссылка на внутреннюю</a></li>
+            </ul>  
+          </div>
+          <div class="form">
+            <h1>Форма</h1>
+            <form action="/"
+            method="POST">
+            <label>
+              Имя:<br />
+              <input name="field-name-1"
+              placeholder="Введите ваше имя" />
+            </label><br />
 
-  <body>
+            <label>
+              email:<br />
+              <input name="field-email"
+              type="email"
+              placeholder="Введите вашу почту" />
+            </label><br />
 
-    <h1>Форма</h1>
+            <label>
+              Дата Рождения:<br />
+              <input name="field-date"
+              value="2003-04-08"
+              type="date" />
+            </label><br />
 
-    <form action="/"
-      method="POST">
+            Пол:<br />
+            <label><input type="radio" checked="checked"
+              name="radio-group-1" value="Значение1" />
+            Муж</label>
+            <label><input type="radio"
+              name="radio-group-1" value="Значение2" />
+            Жен</label><br />
+            
 
-      <label>
-        Имя:<br />
-        <input name="field-name-1"
-          placeholder="Введите ваше имя" />
-      </label><br />
+            Кол-во конечностей:<br />
+            <span><input type="radio" checked="checked"
+              name="radio-group-2" value="Значение1" />
+            1</span>
+            <span><input type="radio"
+              name="radio-group-2" value="Значение2" />
+            2</span>
+            <span><input type="radio"
+              name="radio-group-2" value="Значение3" />
+            100</span><br />
+            
 
-      <label>
-        email:<br />
-        <input name="field-email"
-          type="email"
-          placeholder="Введите вашу почту" />
-      </label><br />
+            <label>
+              Суперспособности:
+              <br />
+              <select name="field-name-4[]"
+              multiple="multiple">
+              <option value="Значение1">Бессмертие</option>
+              <option value="Значение2" selected="selected">Полет</option>
+              <option value="Значение3" selected="selected">Крутость</option>
+              <option value="Значение4" selected="selected">СуперКрутость</option>
+              <option value="Значение5" selected="selected">СуперМегаКрутость</option>
+              <option value="Значение3" selected="selected">СуперМегаГигаКрутость</option>
+            </select>
+          </label><br />
 
-      <label>
-        Дата Рождения:<br />
-        <input name="field-date"
-          value="2003-04-08"
-          type="date" />
-      </label><br />
+          Биография:<br />
+          <textarea name="field-name-2">Пишите тут!</textarea>
+          <br />
 
-        Пол:<br />
-      <label><input type="radio" checked="checked"
-        name="radio-group-1" value="Значение1" />
-        Муж</label>
-      <label><input type="radio"
-        name="radio-group-1" value="Значение2" />
-        Жен</label><br />
-      <label>
+          Чекбокс:<br />
+          <label><input type="checkbox" checked="checked"
+            name="check-1" />
+          С контрктом ознакомлен(а)</label><br />
 
-        Кол-во конечностей:<br />
-      <label><input type="radio" checked="checked"
-        name="radio-group-2" value="Значение1" />
-        1</label>
-      <label><input type="radio"
-        name="radio-group-2" value="Значение2" />
-        2</label>
-      <label><input type="radio"
-        name="radio-group-2" value="Значение3" />
-        100</label><br />
-      <label>
-
-      <label>
-        Суперспособности:
-        <br />
-        <select name="field-name-4[]"
-          multiple="multiple">
-          <option value="Значение1">Бессмертие</option>
-          <option value="Значение2" selected="selected">Полет</option>
-          <option value="Значение3" selected="selected">Крутость</option>
-          <option value="Значение4" selected="selected">СуперКрутость</option>
-          <option value="Значение5" selected="selected">СуперМегаКрутость</option>
-          <option value="Значение3" selected="selected">СуперМегаГигаКрутость</option>
-        </select>
-      </label><br />
-
-        Биография:<br />
-        <textarea name="field-name-2">Пишите тут!</textarea>
-      </label><br />
-
-      Чекбокс:<br />
-      <label><input type="checkbox" checked="checked"
-        name="check-1" />
-        С контрктом ознакомлен(а)</label><br />
-
-      <input type="submit" value="Отправить" />
-    </form>
-
-  </body>
-
-
-</html> 
+          <input type="submit" value="Отправить" />
+        </form>
+      </div>
+      <div class="table">
+        <h1>Таблица</h1>
+        <table>
+          <caption>Melon music roster</caption>
+          <thead>
+            <tr>
+              <th scope="col">Nickname</th>
+              <th scope="col">Born daye</th>
+              <th scope="col">No. of Albums</th>
+              <th scope="col">Most famous song</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Og Buda</th>
+              <td>1994</td>
+              <td>10</td>
+              <td>Старшие</td>
+            </tr>
+            <tr>
+              <th scope="row">Mayot</th>
+              <td>1999</td>
+              <td>8</td>
+              <td>Сайфер</td>
+            </tr>   
+            <tr>
+              <th scope="row">Bushido Zho</th>
+              <td>1999</td>
+              <td>4</td>
+              <td>Ганьг Аутро</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="footer">
+        <p>(c)Любенко Тимофей 2022</p>
+      </div>
+    </body>
+    </html> 
