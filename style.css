@@ -1,0 +1,86 @@
+#logo{
+ float: left;
+ width: 58px;
+ margin: auto;
+ border-radius: 50%;
+}
+.header{
+    font-size: 50px;
+    color: green;
+    box-shadow: 0px 5px 27px;
+    background-color: #85d98594;
+    border-radius: 30px;
+}
+.nav{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    flex-wrap:wrap;
+    font-size: 20px;
+    color: green;
+    max-width: 960px;
+    background-color: #85d98594;
+    margin: 0 auto;
+    margin-top: -28px;
+    padding: 10px;
+    box-shadow: 0px 5px 27px;
+    border-radius: 10px;
+}
+.nav a{
+    color: green;
+    display:inline-block;
+    padding:10px;
+}
+.ssilki{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    box-shadow: 0px 5px 27px;
+    border-radius: 10px;
+    background-color: #85d98594;
+    color: green;
+    max-width: 960px;
+    align-items:center;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.ssilki a{
+    color: green;
+    display:inline-block;
+    padding:5px;
+}
+.form{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    box-shadow: 0px 5px 27px;
+    border-radius: 10px;
+    background-color: #85d98594;
+    color: green;
+    align-items:center;
+    max-width: 960px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.table{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    box-shadow: 0px 5px 27px;
+    border-radius: 10px;
+    background-color: #85d98594;
+    color: green;
+    align-items:center;
+    max-width: 960px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.table table{
+    margin: 0 auto;
+}
+.form form{
+    margin: 0 auto;
+}
+.ssilki ul{
+    margin: 0 auto;
+}
