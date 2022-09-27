@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" type="text/css" href="https://3sc4nor.github.io/style.css">
+  <title>Мой крутой сайт</title>
+</head>
+
+<body>
+  <div class="header">
+    <img id="logo" src="logo.png" alt="Наш лого" />
+    <p>Мой сайт</p>
+  </div>
+  <div class="nav"><div>
+    <a href="#Ссылки">Ссылки</a>
+    <a href="#Форма">Форма</a>
+    <a href="#Таблица">Таблица</a>
+    </div>
+  </div>
+  <div class="ssilki" id="Ссылки">
+    <h1>Ссылки</h1>
+    <ul>
+      <li><a href="http://example.com/">example</a></li>
+      <li><a href="https://example.com/">example</a></li>
+      <li><a href="ftp://example.com/Temp/file.txt">без авторизации</a></li>  
+      <li><a href="ftp://user123:password@example.com/File.txt">с авторизацией</a></li>
+      <li><a href="https://news.ru/category/sport/#Чимаев">Чимаев</a>
+        <li><a href="https://3sc4nor.github.io/#example">example</a>
+          <li><a href="http://ssilka?parameter1=p1&parameter2=p2">2 параметра</a>  
+            <li><a href="#head1" title="Мои ссылки">Мои ссылки</a></li>
+            <li><a href="#head2" title="Моя форма">Моя форма</a></li>
+            <li><a>без href</a></li>
+            <li><a href="">пустое href</a></li>
+            <li><a href="http://github.io" rel="nofollow">запрещен переход поисковикам</a></li>
+            <li><a href="http://github.io" rel="nofollow"><!--noindex-->запрещенная для индексации поисковиками<!--/noindex--></a></li>
+            <li><p>Контекстная <a href="http://github.io">ссылка</a> в тексте абзаца</p>
+              <li><a href="page">Относительная ссылка на страницу в текущем каталоге</a></li>
+              <li><a href="./about/page">Относительная ссылка на страницу в каталоге about</a></li>
+              <li><a href="../page">Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
+              <li><a href="../../page">Относительная ссылка на страницу в каталоге двумя уровнями выше текущего</a></li>
+              <li><a href="/">ссылка на главную</a></li>
+              <li><a href="/pages/page">ссылка на внутреннюю</a></li>
+            </ul>  
+          </div>
+          <div class="form" id="Форма">
+            <h1>Форма</h1>
+            <form action="/"
+            method="POST">
+            <label>
+              Имя:<br />
+              <input name="field-name-1"
+              placeholder="Введите ваше имя" />
+            </label><br />
+
+            <label>
+              email:<br />
+              <input name="field-email"
+              type="email"
+              placeholder="Введите вашу почту" />
+            </label><br />
+
+            <label>
+              Дата Рождения:<br />
+              <input name="field-date"
+              value="2003-04-08"
+              type="date" />
+            </label><br />
+
+            Пол:<br />
+            <label><input type="radio" checked="checked"
+              name="radio-group-1" value="Значение1" />
+            Муж</label>
+            <label><input type="radio"
+              name="radio-group-1" value="Значение2" />
+            Жен</label><br />
+            
+
+            Кол-во конечностей:<br />
+            <span><input type="radio" checked="checked"
+              name="radio-group-2" value="Значение1" />
+            1</span>
+            <span><input type="radio"
+              name="radio-group-2" value="Значение2" />
+            2</span>
+            <span><input type="radio"
+              name="radio-group-2" value="Значение3" />
+            100</span><br />
+            
+
+            <label>
+              Суперспособности:
+              <br />
+              <select name="field-name-4[]"
+              multiple="multiple">
+              <option value="Значение1">Бессмертие</option>
+              <option value="Значение2" selected="selected">Полет</option>
+              <option value="Значение3" selected="selected">Крутость</option>
+              <option value="Значение4" selected="selected">СуперКрутость</option>
+              <option value="Значение5" selected="selected">СуперМегаКрутость</option>
+              <option value="Значение3" selected="selected">СуперМегаГигаКрутость</option>
+            </select>
+          </label><br />
+
+          Биография:<br />
+          <textarea name="field-name-2">Пишите тут!</textarea>
+          <br />
+
+          Чекбокс:<br />
+          <label><input type="checkbox" checked="checked"
+            name="check-1" />
+          С контрктом ознакомлен(а)</label><br />
+
+          <input type="submit" value="Отправить" />
+        </form>
+      </div>
+      <div class="table" id="Таблица">
+        <h1>Таблица</h1>
+        <table>
+          <caption>Melon music roster</caption>
+          <thead>
+            <tr>
+              <th scope="col">Nickname</th>
+              <th scope="col">Born daye</th>
+              <th scope="col">No. of Albums</th>
+              <th scope="col">Most famous song</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Og Buda</th>
+              <td>1994</td>
+              <td>10</td>
+              <td>Старшие</td>
+            </tr>
+            <tr>
+              <th scope="row">Mayot</th>
+              <td>1999</td>
+              <td>8</td>
+              <td>Сайфер</td>
+            </tr>   
+            <tr>
+              <th scope="row">Bushido Zho</th>
+              <td>1999</td>
+              <td>4</td>
+              <td>Ганьг Аутро</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="footer">
+        <p>(c)Любенко Тимофей 2022</p>
+      </div>
+    </body>
+    </html> 
