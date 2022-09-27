@@ -34,8 +34,8 @@
     border-radius: 10px;
 }
 .nav a{
+    display: flex;
     color: green;
-    display:inline-block;
     padding:10px;
 }
 .ssilki{
@@ -44,6 +44,7 @@
     justify-content:space-around;
     flex-wrap:wrap;
     vertical-align: middle;
+    flex-direction: column;
     box-shadow: 0px 5px 27px;
     border-radius: 10px;
     background-color: #85d98594;
@@ -74,6 +75,7 @@
     display:flex;
     justify-content:space-around;
     flex-wrap:wrap;
+    flex-direction: column;
     box-shadow: 0px 5px 27px;
     border-radius: 10px;
     background-color: #85d98594;
