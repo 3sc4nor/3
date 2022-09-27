@@ -95,8 +95,8 @@
 .header p{
     margin: 0 auto;
 }
-.footer{
-    width: 100%;
+.footer p{
+    width: 0%;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -110,7 +110,7 @@
         flex-direction: row;
     }
     .nav {
-        flex-direction: row;
+        flex-direction: column;
     }
     .ssilki{
         flex-direction: row;
